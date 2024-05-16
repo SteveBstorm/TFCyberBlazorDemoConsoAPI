@@ -1,0 +1,14 @@
+﻿@page "/pokedex"
+@using BlazorDemoConsoAPI.Models
+<h3>Pokedex</h3>
+@if(Poketruc.Results != null) {
+<ul>
+@foreach(Result r in Results)
+{
+    <li>@r.Name</li>
+}
+</ul>
+}
+@code {
+
+}
